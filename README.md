@@ -12,6 +12,21 @@ The purpose of this analysis is to help Bobby build an employee database with SQ
 
 ## Results
 
+The findings of this analysis are as follows:
+
+- A 'retirement_titles' table (shown below) is created by retrieving the emp_no, first_name, and last_name columns from the Employees table and title, from_date, and to_date columns from the Titles table and then joining them on the primary key. Then the data is filtered on the birth_date column to retrieve the employees who were born between 1952 and 1955, orderd by the employee number.
+
+  Total 133,776 rows are returned with the list of employees who is going to retire in coming few years.
+
+<img width="666" alt="retirement_titles" src="https://user-images.githubusercontent.com/95826875/153288780-aa73e4eb-4c83-4a64-889b-c462c8830781.png">
+
+<img width="488" alt="unique_titles" src="https://user-images.githubusercontent.com/95826875/153288791-93fb0d1f-3bac-4d12-916e-62e5ccb9fb2b.png">
+
+<img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
+
+<img width="738" alt="mentorship_eligibilty" src="https://user-images.githubusercontent.com/95826875/153288822-acf4c42d-a17c-4411-9a59-e81e7660a838.png">
+
+
 ## Summary
 
 #### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
