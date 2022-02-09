@@ -45,4 +45,11 @@ Using the ERD (shown below) as a reference, four new tables are created to perfo
 
 #### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
+The 'retirement_titles table' contains the information about the employees that are about to retire. But to provide more insight into the upcoming "silver tsunami, a new table _retirement_per_department can be created displaying the retiring employee data as per their department.
+
+<img width="803" alt="retirement_per_dept_query" src="https://user-images.githubusercontent.com/95826875/153304032-90b5de86-ce38-467a-ba93-bec355f558bc.png">
+
+<img width="886" alt="retirement_per_dept_table" src="https://user-images.githubusercontent.com/95826875/153304074-f6f06bb7-7dea-4bb3-bdf0-a2d67ba1ff9a.png">
+
+
 #### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
