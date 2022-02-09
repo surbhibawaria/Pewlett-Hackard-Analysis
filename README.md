@@ -16,7 +16,7 @@ The findings of this analysis are as follows:
 
 - A _retirement_titles_ table (shown below) is created by retrieving the 'emp_no', 'first_name', and 'last_name' columns from the _Employees table_ and 'title', 'from_date', and 'to_date' columns from the _Titles table_ and then joining them on the primary key. Then the data is filtered on the 'birth_date' column to retrieve the employees who were born between 1952 and 1955, orderd by the employee number.
 
-  Total 133,776 rows returned with the list of employees who is going to retire in coming few years.
+   Total 133,776 rows returned with the list of employees who is going to retire in coming few years.
 
   <img width="666" alt="retirement_titles" src="https://user-images.githubusercontent.com/95826875/153288780-aa73e4eb-4c83-4a64-889b-c462c8830781.png">
 
@@ -33,10 +33,10 @@ The findings of this analysis are as follows:
   <img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
 
 - A _mentorship_eligibility table_ is created by retrieving the 'emp_no', 'first_name', 'last_name', and 'birth_date' columns from the _Employees table_, 'from_date' and 'to_date' columns from the _Department Employee table_, and 'title' column from the _Titles table_. 'DISTINCT ON' statement is used to retrieve the first occurrence of the employee number for each set of rows defined by the 'ON()' clause. _Employees table_ and the _Department Employee table_ are joined on the primary key. And _Employees table_ and the _Titles table_ are also joined on the primary key. Later, the data is filtered on the 'to_date' column to all the current employees, then on the 'birth_date' columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965, order by the employee number.
-
- Total 1549 rows returned which displays a list of employees who are eligible for the mentorship program.
+  
+  Total 1549 rows returned which displays a list of employees who are eligible for the mentorship program.
  
- <img width="738" alt="mentorship_eligibilty" src="https://user-images.githubusercontent.com/95826875/153296660-937b88fc-b98d-48a3-a6da-96d7e86d0996.png">
+  <img width="738" alt="mentorship_eligibilty" src="https://user-images.githubusercontent.com/95826875/153296660-937b88fc-b98d-48a3-a6da-96d7e86d0996.png">
 
 
 ## Summary
