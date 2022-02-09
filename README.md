@@ -22,13 +22,15 @@ The findings of this analysis are as follows:
 
 - In the 'retirement_titles' table, there are duplicate entries for some employees because they have switched titles over the years. So now a new table 'unique_titles' is created to remove these duplicates and to keep only the most recent title of each employee. This is done by using the 'DISTINCT ON' statement to retrieve the first occurrence of the employee number for each set of rows defined by the 'ON()' clause. Then excluding those employees that have already left the company by filtering on 'to_date' to keep only those dates that are equal to '9999-01-01', and then sorting the _Unique Titles table_ in ascending order by the employee number and descending order by the last date (i.e., 'to_date') of the most recent title.
 
-  Total 72458 rows of data returned  with the list of employees with their most recent titles.
+  Total 72458 rows of data returned with the list of employees with their most recent titles.
 
   <img width="488" alt="unique_titles" src="https://user-images.githubusercontent.com/95826875/153288791-93fb0d1f-3bac-4d12-916e-62e5ccb9fb2b.png">
 
-<img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
+- A 'retiring_titles' table is created to retrieve the number of employees by their most recent job title who are about to retire by first, retrieving the number of titles from the _Unique Titles table_. Then, grouping the table by title, then sort the count column in descending order.
 
-<img width="738" alt="mentorship_eligibilty" src="https://user-images.githubusercontent.com/95826875/153288822-acf4c42d-a17c-4411-9a59-e81e7660a838.png">
+  Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles which suggest that 64% (57,668/90,398 = 64%) of the employees are about to retire.
+  
+  <img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
 
 
 ## Summary
