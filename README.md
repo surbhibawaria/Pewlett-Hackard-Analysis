@@ -12,7 +12,11 @@ The purpose of this analysis is to help Bobby build an employee database with SQ
 
 ## Results
 
-The findings of this analysis are as follows:
+Using the ERD below as a reference, four new tables are created to perform this analysis.
+
+<img width="548" alt="ERD" src="https://user-images.githubusercontent.com/95826875/153299473-d27c1ec1-b2b5-4456-9af0-8b0e1039444a.png">
+
+The steps and findings of this analysis are as follows:
 
 - A _retirement_titles_ table (shown below) is created by retrieving the 'emp_no', 'first_name', and 'last_name' columns from the _Employees table_ and 'title', 'from_date', and 'to_date' columns from the _Titles table_ and then joining them on the primary key. Then the data is filtered on the 'birth_date' column to retrieve the employees who were born between 1952 and 1955, orderd by the employee number.
 
