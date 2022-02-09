@@ -12,11 +12,9 @@ The purpose of this analysis is to help Bobby build an employee database with SQ
 
 ## Results
 
-Using the ERD below as a reference, four new tables are created to perform this analysis.
+Using the ERD (shown below) as a reference, four new tables are created to perform this analysis. The findings are as follows:
 
 <img width="548" alt="ERD" src="https://user-images.githubusercontent.com/95826875/153299473-d27c1ec1-b2b5-4456-9af0-8b0e1039444a.png">
-
-The steps and findings of this analysis are as follows:
 
 - A _retirement_titles_ table (shown below) is created by retrieving the 'emp_no', 'first_name', and 'last_name' columns from the _Employees table_ and 'title', 'from_date', and 'to_date' columns from the _Titles table_ and then joining them on the primary key. Then the data is filtered on the 'birth_date' column to retrieve the employees who were born between 1952 and 1955, orderd by the employee number.
 
@@ -24,19 +22,19 @@ The steps and findings of this analysis are as follows:
 
   <img width="666" alt="retirement_titles" src="https://user-images.githubusercontent.com/95826875/153288780-aa73e4eb-4c83-4a64-889b-c462c8830781.png">
 
-- In the _retirement_titles_ table, there are duplicate entries for some employees because they have switched titles over the years. So now a new table _unique_titles_ is created to remove these duplicates and to keep only the most recent title of each employee. This is done by using the 'DISTINCT ON' statement to retrieve the first occurrence of the employee number for each set of rows defined by the 'ON()' clause. Then excluding those employees that have already left the company by filtering on 'to_date' to keep only those dates that are equal to '9999-01-01', and then sorting in ascending order by the employee number and descending order by the last date (i.e., 'to_date') of the most recent title.
+- In the _retirement_titles_ table, there are duplicate entries for some employees because they have switched titles over the years. So now a new table _unique_titles_ (shown below) is created to remove these duplicates and to keep only the most recent title of each employee. This is done by using the 'DISTINCT ON' statement to retrieve the first occurrence of the employee number for each set of rows defined by the 'ON()' clause. Then excluding those employees that have already left the company by filtering on 'to_date' to keep only those dates that are equal to '9999-01-01', and then sorting in ascending order by the employee number and descending order by the last date (i.e., 'to_date') of the most recent title.
 
   Total 72458 rows of data returned with the list of employees with their most recent titles.
 
   <img width="488" alt="unique_titles" src="https://user-images.githubusercontent.com/95826875/153288791-93fb0d1f-3bac-4d12-916e-62e5ccb9fb2b.png">
 
-- A _retiring_titles_ table is created to retrieve the number of employees by their most recent job title who are about to retire, by first, retrieving the number of titles from the _unique_titles table_. Then, grouping the table by title, then sorting the count column in descending order.
+- A _retiring_titles_ table (shown below) is created to retrieve the number of employees by their most recent job title who are about to retire, by first, retrieving the number of titles from the _unique_titles table_. Then, grouping the table by title, then sorting the count column in descending order.
 
   Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles, and the data suggest that 64% of the employees are about to retire.
   
   <img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
 
-- A _mentorship_eligibility table_ is created by retrieving the 'emp_no', 'first_name', 'last_name', and 'birth_date' columns from the _Employees table_, 'from_date' and 'to_date' columns from the _Department Employee table_, and 'title' column from the _Titles table_. 'DISTINCT ON' statement is used to retrieve the first occurrence of the employee number for each set of rows defined by the 'ON()' clause. _Employees table_ and the _Department Employee table_ are joined on the primary key. And _Employees table_ and the _Titles table_ are also joined on the primary key. Later, the data is filtered on the 'to_date' column to all the current employees, then on the 'birth_date' columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965, order by the employee number.
+- A _mentorship_eligibility table_ (shown below) is created by retrieving the 'emp_no', 'first_name', 'last_name', and 'birth_date' columns from the _Employees table_, 'from_date' and 'to_date' columns from the _Department Employee table_, and 'title' column from the _Titles table_. 'DISTINCT ON' statement is used to retrieve the first occurrence of the employee number for each set of rows defined by the 'ON()' clause. _Employees table_ and the _Department Employee table_ are joined on the primary key. And _Employees table_ and the _Titles table_ are also joined on the primary key. Later, the data is filtered on the 'to_date' column to all the current employees, then on the 'birth_date' columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965, order by the employee number.
   
   Total 1549 rows returned which displays a list of the current employees who were born between January 1, 1965 and December 31, 1965 and are eligible for the mentorship program.
  
