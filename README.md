@@ -26,7 +26,7 @@ The findings of this analysis are as follows:
 
   <img width="488" alt="unique_titles" src="https://user-images.githubusercontent.com/95826875/153288791-93fb0d1f-3bac-4d12-916e-62e5ccb9fb2b.png">
 
-- A _retiring_titles_ table is created to retrieve the number of employees by their most recent job title who are about to retire by first, retrieving the number of titles from the _unique_titles table_. Then, grouping the table by title, then sort the count column in descending order.
+- A _retiring_titles_ table is created to retrieve the number of employees by their most recent job title who are about to retire, by first, retrieving the number of titles from the _unique_titles table_. Then, grouping the table by title, then sorting the count column in descending order.
 
   Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles which suggest that 64% (57,668/90,398 = 64%) of the employees are about to retire.
   
