@@ -53,3 +53,5 @@ The above analysis gives us an idea, that about 90,398 roles will need to be fil
 
 
 #### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+There are presently 1549 qualified, retirement-ready employees in total to mentor the next generation of Pewlett Hackard, which doesn't seems to be enough.
