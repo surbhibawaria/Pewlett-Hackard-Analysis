@@ -45,7 +45,7 @@ Using the ERD (shown below) as a reference, four new tables are created to perfo
 
 #### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-Although the _retirement_titles table_ contains all the information about the employees that are about to retire. But to provide more insight into the upcoming "silver tsunami, a new table _retirement_per_department_ can be created displaying the employee data as per their department. So that we can break down the data as per each employee's department and help Bobby and his manager with what to expect in each department separately. 
+The above analysis gives us an idea, that about 90,398 roles will need to be filled as per the present situation of the company. But too provide more insight into the upcoming "silver tsunami, a new table _retirement_per_department_ can be created displaying the employee data as per their department. So that we can break down the data as per each employee's department and help Bobby and his manager with what to expect in each department separately, and how many roles will need to be filled.
 
 <img width="803" alt="retirement_per_dept_query" src="https://user-images.githubusercontent.com/95826875/153304032-90b5de86-ce38-467a-ba93-bec355f558bc.png">
 
