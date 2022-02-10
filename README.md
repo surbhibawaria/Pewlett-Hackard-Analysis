@@ -30,7 +30,7 @@ Using the ERD (shown below) as a reference, four new tables are created to perfo
 
 - A _retiring_titles_ table (shown below) is created to retrieve the number of employees by their most recent job title who are about to retire, by first, retrieving the number of titles from the _unique_titles table_. Then, grouping the table by title, then sorting the count column in descending order.
 
-  Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles, and the data suggest that 64% of the employees are about to retire.
+  Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles, and the data suggest that 70% of the employees are about to retire.
   
   <img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
 
@@ -45,7 +45,7 @@ Using the ERD (shown below) as a reference, four new tables are created to perfo
 
 #### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-The above analysis gives us an idea, that about 72458 roles will need to be filled as per the present situation of the company. But to provide more insight into the upcoming "silver tsunami, a new table _retirement_per_department_ can be created displaying the employee data as per their department. So that we can break down the data as per each employee's department and help Bobby and his manager with what to expect in each department separately, and how many roles will need to be filled.
+The above analysis gives us an idea, that about 72,458 roles will need to be filled as per the present situation of the company. But to provide more insight into the upcoming "silver tsunami, a new table _retirement_per_department_ can be created displaying the employee data as per their department. So that we can break down the data as per each employee's department and help Bobby and his manager with what to expect in each department separately, and how many roles will need to be filled.
 
 <img width="786" alt="retirement_per_dept_query" src="https://user-images.githubusercontent.com/95826875/153340413-5ad68595-d983-46e5-9f4f-181b6d8fbf5d.png">
 
