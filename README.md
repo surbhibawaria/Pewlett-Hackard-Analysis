@@ -47,12 +47,21 @@ Using the ERD (shown below) as a reference, four new tables are created to perfo
 
 The above analysis gives us an idea, that about 90,398 roles will need to be filled as per the present situation of the company. But too provide more insight into the upcoming "silver tsunami, a new table _retirement_per_department_ can be created displaying the employee data as per their department. So that we can break down the data as per each employee's department and help Bobby and his manager with what to expect in each department separately, and how many roles will need to be filled.
 
-<img width="803" alt="retirement_per_dept_query" src="https://user-images.githubusercontent.com/95826875/153304032-90b5de86-ce38-467a-ba93-bec355f558bc.png">
+<img width="786" alt="retirement_per_dept_query" src="https://user-images.githubusercontent.com/95826875/153340413-5ad68595-d983-46e5-9f4f-181b6d8fbf5d.png">
 
 <img width="886" alt="retirement_per_dept_table" src="https://user-images.githubusercontent.com/95826875/153304074-f6f06bb7-7dea-4bb3-bdf0-a2d67ba1ff9a.png">
 
 
 #### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-There are presently 1549 qualified, retirement-ready employees in total to mentor the next generation of Pewlett Hackard, which doesn't seems to be enough. Now we can further breakdown the mentorship eligible employees by department for better understanding.
+There are presently 1549 qualified, retirement-ready employees in total to mentor the next generation of Pewlett Hackard, which doesn't seems to be enough. Now we can further breakdown the mentorship eligible employees by their titles for better understanding.
 
+<img width="288" alt="mentorship_eligible_emp_query" src="https://user-images.githubusercontent.com/95826875/153343211-d519997d-7e49-4fdb-b251-b366342e4a25.png">
+
+<img width="221" alt="mentorship_eligible_emp_table" src="https://user-images.githubusercontent.com/95826875/153343224-dc580059-7e18-41c0-af1e-8d67767d4f15.png">
+
+Moving on the data of mentorship eligible employees by their department type can be identified as below. Here we can see that 
+
+<img width="423" alt="mentorship_eligible_emp_by_dept_query" src="https://user-images.githubusercontent.com/95826875/153343276-e5185894-d504-4676-b538-1ea7d9f9fcc2.png">
+
+<img width="363" alt="mentorship_eligible_emp_by_dept_table" src="https://user-images.githubusercontent.com/95826875/153343284-9d12666a-c079-45f2-87e9-3893660c389f.png">
