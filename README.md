@@ -54,13 +54,13 @@ The above analysis gives us an idea, that about 90,398 roles will need to be fil
 
 #### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-There are presently 1549 qualified, retirement-ready employees in total to mentor the next generation of Pewlett Hackard. Now we can further breakdown the mentorship eligible employees by their titles for better understanding, and it can be seen that their are insufficient retirement-ready employees to mentor the next generation.
+There are presently 1549 qualified, retirement-ready employees in total to mentor the next generation of Pewlett Hackard. Now we can further breakdown the mentorship eligible employees for better understanding, and it can be seen that their are insufficient retirement-ready employees to mentor the next generation with most of the employees being in senior positions.
 
 <img width="288" alt="mentorship_eligible_emp_query" src="https://user-images.githubusercontent.com/95826875/153343211-d519997d-7e49-4fdb-b251-b366342e4a25.png">
 
 <img width="221" alt="mentorship_eligible_emp_table" src="https://user-images.githubusercontent.com/95826875/153343224-dc580059-7e18-41c0-af1e-8d67767d4f15.png">
 
-Moving on the data of mentorship eligible employees by their department type can be identified as below. Here we can see that 
+Another way can be to identify list of mentorship eligible employees by their department type to help understand what to expect in each department individually.
 
 <img width="423" alt="mentorship_eligible_emp_by_dept_query" src="https://user-images.githubusercontent.com/95826875/153343276-e5185894-d504-4676-b538-1ea7d9f9fcc2.png">
 
