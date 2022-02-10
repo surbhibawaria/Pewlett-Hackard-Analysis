@@ -30,7 +30,7 @@ Using the ERD (shown below) as a reference, four new tables are created to perfo
 
 - A _retiring_titles_ table (shown below) is created to retrieve the number of employees by their most recent job title who are about to retire, by first, retrieving the number of titles from the _unique_titles table_. Then, grouping the table by title, then sorting the count column in descending order.
 
-  Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles, and the data suggest that 70% of the employees are about to retire.
+  Total 7 rows returned with the count of employees by their most recent job titles. Maximum number of employees have senior titles, and the data suggest that 70% (50,842/72,458) of the employees are about to retire.
   
   <img width="227" alt="retiring_titles" src="https://user-images.githubusercontent.com/95826875/153288805-0ae971c5-d0bf-4088-9b37-853e7833d9a8.png">
 
